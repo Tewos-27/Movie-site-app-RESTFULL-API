@@ -32,7 +32,6 @@ const App = () => {
                   onClick={() => searchMovies(searchTerm)}
             />
        </div>
-          
           {
              movies?.length > 0
              ?(
@@ -48,7 +47,6 @@ const App = () => {
               </div>
              )
           }
-
     </div>
   )
 } 
