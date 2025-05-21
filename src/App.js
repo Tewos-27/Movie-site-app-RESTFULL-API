@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
 import './App.css';
 import SearchIcon from './search.svg';
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=2429055a';
+
+const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=2429055a'; 
 
 const App = () => { 
+   // useState is a hook that allows you to add state to a functional component
+   // useEffect is a hook that allows you to perform side effects in your components
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
