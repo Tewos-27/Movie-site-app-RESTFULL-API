@@ -11,6 +11,8 @@ const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
+//   searchMovies is an asynchronous function that fetches movie data from the API based on the provided title
+//   The function uses the fetch API to make a GET request to the OMDB API with the specified title
   const searchMovies = async (title) => {
     const response  = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json(); 
