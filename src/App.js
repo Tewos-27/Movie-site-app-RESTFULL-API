@@ -17,6 +17,8 @@ const App = () => {
    // API_URL is a constant that holds the base URL for the OMDB API
    // The API key is included in the URL to authenticate the request
     const response  = await fetch(`${API_URL}&s=${title}`);
+   //  The response is then converted to JSON format
+   // The data is then stored in the movies state variable using the setMovies function
     const data = await response.json(); 
     setMovies(data.Search);
 
