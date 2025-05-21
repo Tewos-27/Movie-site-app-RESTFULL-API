@@ -23,9 +23,13 @@ const App = () => {
     setMovies(data.Search);
 
   }
+   // useEffect is used to perform side effects in functional components
+   // It takes a function as its first argument and an array of dependencies as its second argument
   useEffect(() => {
         searchMovies('Spiderman');
   }, []); 
+// The empty array as the second argument means that this effect will only run once when the component mounts
+// The searchMovies function is called with the initial search term 'Spiderman' to fetch and display the movies when the component mounts
   return (
     <div className="app">
        <h1>Tewos Movies</h1>
