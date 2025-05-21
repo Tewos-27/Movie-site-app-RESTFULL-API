@@ -37,6 +37,8 @@ const App = () => {
             <input 
                   placeholder="Search For Movies"
                   value={searchTerm}
+                  // The value of the input field is controlled by the searchTerm state variable
+                  // The onChange event handler updates the searchTerm state variable with the current value of the input field
                   onChange={(e) => setSearchTerm(e.target.value)}  
             />
             <img 
