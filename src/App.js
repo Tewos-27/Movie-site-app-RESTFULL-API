@@ -14,6 +14,8 @@ const App = () => {
 //   searchMovies is an asynchronous function that fetches movie data from the API based on the provided title
 //   The function uses the fetch API to make a GET request to the OMDB API with the specified title
   const searchMovies = async (title) => {
+   // API_URL is a constant that holds the base URL for the OMDB API
+   // The API key is included in the URL to authenticate the request
     const response  = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json(); 
     setMovies(data.Search);
