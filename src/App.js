@@ -20,6 +20,7 @@ const App = () => {
    //  The response is then converted to JSON format
    // The data is then stored in the movies state variable using the setMovies function
     const data = await response.json(); 
+   //  The movies state variable is updated with the fetched data
     setMovies(data.Search);
 
   }
@@ -48,6 +49,7 @@ const App = () => {
             />
        </div>
           {
+            // The movies state variable is an array that holds the movie data fetched from the API
              movies?.length > 0
              ?(
               <div className="container">
